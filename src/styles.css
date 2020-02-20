@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+/* for table row hover - in post-list component */
+/* table.table-hover tbody tr:hover {
+    cursor: pointer;
+} */
+
+
+body {
+    width: 100%;
+    background: #f3f3f3;
+    margin-left: -10rem;
+}
+
+#notes li {
+    list-style-type: none;
+    position: relative;
+    width: 350px;
+    min-height: fit-content;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    margin-left: 350px;
+    padding: 5px 5px 5px 5px;
+    background: #ccff99;
+    -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    box-shadow: 0 1px 5px #000;
+    -webkit-transform: rotate(-.5deg);
+    -moz-transform: rotate(-.5deg);
+    -o-transform: rotate(-.5deg);
+}
+#notes li:hover {
+    background: #e3fcc9;
+}
+
+#notes li:nth-child(even) {
+    -webkit-transform: rotate(.5deg);
+    -moz-transform: rotate(.5deg);
+    -o-transform: rotate(.5deg);
+}
+
+#notes li h2 {
+    text-align: center;
+    margin-top: -3rem;
+    font-family: Open sans;
+    font-size: 25px;
+}
+#notes li p {
+    text-align: center;
+    font: normal normal normal 30px/38px 'Shadows Into Light', Helvetica, Arial, sans-serif;
+    color: #000;
+    overflow:hidden;
+}
+#notes li a {
+    text-align: center;
+    padding: 5px;
+}
+
+#notes li::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 140px;
+    top: -15px;
+    width: 75px;
+    height: 25px;
+    z-index: 2;
+    background-color: rgba(243,245,228,0.5);
+    border: 2px solid rgba(255,255,255,0.5);
+    -webkit-box-shadow: 0 0 5px #888;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+}
+
+#notes li:nth-child(even)::before {
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+}
+
+.fa {
+    color: gray;
+    margin-right: -18rem;
+    text-align: right;
+    vertical-align: top;
+    font-size: 1.5rem;
+    z-index: 200;
+}
+
+.fa {
+    margin-right: -18rem;
+    text-align: right;
+    vertical-align: middle;
+}
+

@@ -1,0 +1,14 @@
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel='stylesheet' type='text/css'>
+
+
+ <ul *ngFor="let post of list" id="notes" class="table tabler-hover">
+
+  <li (click)="onEdit(post)">
+      <p><a class="btn text-danger" (click)="onDelete(post.id)"><i class="fa fa-times"></i></a></p>
+      <h2 (click)="onEdit(post)">{{post.fullName}}</h2>
+      <p (click)="onEdit(post)">{{post.text}}</p>
+      <a href="{{post.link}}">{{post.link}}</a>
+  </li>
+
+</ul>
+

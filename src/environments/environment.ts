@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyCKT17AnRjDoCoYkoR0ld3gxrVLH6ZR-x0",
+    authDomain: "virtual-whiteboard.firebaseapp.com",
+    databaseURL: "https://virtual-whiteboard.firebaseio.com",
+    projectId: "virtual-whiteboard",
+    storageBucket: "virtual-whiteboard.appspot.com",
+    messagingSenderId: "159443610888",
+    appId: "1:159443610888:web:bf194cac8304887acb10bd"
+  }
 };
 
 /*
